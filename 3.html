@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling with JavaScript</title>
+    <style>
+     
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .hover-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hover-box:hover {
+            background-color: coral;
+        }
+
+        .styled-text {
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Styling with JavaScript</h1>
+    
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    
+    <div class="hover-box">Hover over me</div>
+    
+    <p class="styled-text" onclick="changeTextColor()">Click to change my color</p>
+
+    <button onclick="changeButtonStyle()">Click to style me</button>
+
+    <script src="3.js"></script>
+</body>
+</html>
